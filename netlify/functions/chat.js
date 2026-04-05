@@ -8,13 +8,13 @@ exports.handler = async (event) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": "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",
+        "x-api-key": process.env.ANTHROPIC_API_KEY,
         "anthropic-version": "2023-06-01"
       },
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
         max_tokens: 1000,
-        system: `Eres el asistente virtual de Vive, Atrévete a Sanar. Acompañas con calidez y empatía. Siempre menciona la sesión de diagnóstico gratuita. WhatsApp: +57 323 3434171`,
+        system: "Eres el asistente virtual de Vive, Atrévete a Sanar. Acompañas con calidez y empatía. Siempre menciona la sesión de diagnóstico gratuita. WhatsApp: +57 323 3434171",
         messages: messages
       })
     });
