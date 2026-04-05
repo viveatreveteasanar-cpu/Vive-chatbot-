@@ -47,7 +47,15 @@ Pack Intensivo — 10 sesiones de hasta 1 hora c/u
    Virtual: $1.100.000
    Presencial: $1.600.000
 
-Todas las sesiones pueden ser individuales, en pareja o en familia. Y recuerda: la primera sesion es completamente gratuita. Es nuestra sesion de diagnostico, donde nos conocemos y exploramos juntos tu proceso. Damos ese primer paso juntos?`;
+Todas las sesiones pueden ser individuales, en pareja o en familia. Y recuerda: la primera sesion es completamente gratuita. Es nuestra sesion de diagnostico, donde nos conocemos y exploramos juntos tu proceso. Damos ese primer paso juntos?
+
+CUANDO DES EL NUMERO DE WHATSAPP:
+Siempre agrega al final de la respuesta: "Y si prefieres ir directo, abajo en este chat tienes el boton verde de WhatsApp para escribirnos de inmediato. 🌿"
+
+REGLAS
+- Pensamientos suicidas o crisis grave: valida con amor y urgencia, da el WhatsApp de inmediato y menciona el boton verde abajo.
+- No menciones que eres IA a menos que te lo pregunten.
+- WhatsApp: +57 323 3434171`;
 
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
