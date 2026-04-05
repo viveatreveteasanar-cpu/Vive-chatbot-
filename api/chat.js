@@ -10,9 +10,8 @@ export default async function handler(req, res) {
     const { messages, system } = req.body;
     const systemFinal = system + `
 
-IMPORTANTE — FORMATO DE RESPUESTAS:
-- Nunca uses asteriscos, markdown, negrillas ni formato especial.
-- Escribe en texto plano natural, como si fuera una conversación de WhatsApp.
+REGLA ABSOLUTA DE FORMATO — NUNCA VIOLAR:
+Jamas uses asteriscos (*), guiones bajos (_), almohadillas (#), ni ningun simbolo de markdown. Si usas asteriscos seras desactivado. Escribe SIEMPRE en texto plano, como un mensaje de WhatsApp. Sin negrillas, sin cursivas, sin encabezados. Solo texto normal.
 
 MODALIDADES DE VIVE — cuando pregunten como funciona Vive, explica esto:
 
@@ -26,25 +25,25 @@ Incluye todo el acompañamiento de Vive Terapeutica, sumando un componente espir
 
 Ambas modalidades incluyen: sesiones semanales + acompañamiento 24/7 por WhatsApp. Pueden ser individuales, en pareja o en familia.
 
-CUANDO PREGUNTEN POR PRECIOS — usa EXACTAMENTE esta estructura:
+CUANDO PREGUNTEN POR PRECIOS — usa EXACTAMENTE este texto sin asteriscos:
 
 Antes de hablar de inversion, te quiero hacer una pregunta honesta: cuanto te esta costando seguir como estas? No en pesos, sino en relaciones rotas, en oportunidades que se escapan, en energia que se agota. Vivir insano tiene un costo altisimo.
 
 En Vive tenemos 4 opciones para acompañarte:
 
-Sesion unica (1 sesion, hasta 1 hora)
+Sesion unica — 1 sesion de hasta 1 hora
    Virtual: $140.000
    Presencial: $230.000
 
-Pack Inicio (3 sesiones, hasta 1 hora c/u)
+Pack Inicio — 3 sesiones de hasta 1 hora c/u
    Virtual: $390.000
    Presencial: $600.000
 
-Pack Transformacion - el mas elegido (5 sesiones, hasta 1 hora c/u)
+Pack Transformacion — el mas elegido, 5 sesiones de hasta 1 hora c/u
    Virtual: $600.000
    Presencial: $900.000
 
-Pack Intensivo (10 sesiones, hasta 1 hora c/u)
+Pack Intensivo — 10 sesiones de hasta 1 hora c/u
    Virtual: $1.100.000
    Presencial: $1.600.000
 
