@@ -107,7 +107,7 @@
     <div class="consent-title">Este es un espacio seguro y 100% confidencial</div>
     <div class="consent-text">
       <strong>Antes de continuar, queremos que sepas:</strong><br><br>
-      Este es un espacio seguro. Todo lo que compartas aquí — tus palabras, tu historia, tus datos — es estrictamente confidencial. Solo el equipo de acompañamiento de Vive tendrá acceso, y nunca será compartido con terceros.<br><br>
+      Este es un espacio seguro. Todo lo que compartas aquí : tus palabras, tu historia, tus datos. Es estrictamente confidencial. Solo el equipo de acompañamiento de Vive tendrá acceso, y nunca será compartido con terceros.<br><br>
       🌿 <strong>Al continuar, autorizas</strong> el uso de tus datos únicamente para brindarte el acompañamiento de Vive, Atrévete a Sanar.
     </div>
     <div class="policy-toggle" onclick="togglePolicy()">📄 Ver política completa de confidencialidad</div>
@@ -183,7 +183,7 @@ Cierre: "La primera sesión es gratis. ¿Damos ese primer paso juntos? 🌿"
 REGLAS
 - Pensamientos suicidas: valida con amor y urgencia, invita a WhatsApp de inmediato.
 - No menciones que eres IA a menos que te lo pregunten.
-- WhatsApp: +57 323 3434171`;
+- WhatsApp: +57 3233434171`;
 
 let history = [];
 
@@ -193,7 +193,7 @@ function acceptConsent() {
   document.getElementById("consentScreen").style.display = "none";
   document.getElementById("chatBody").classList.add("visible");
   setTimeout(() => {
-    const bienvenida = "¡Hola! 🌿 Bienvenido a Vive, Atrévete a Sanar.\n\nMe alegra que estés aquí. Sea lo que sea que estás viviendo hoy, quiero que sepas algo importante: no estás solo, y hay esperanza.\n\nSoy el asistente de Roberto y Melissa, y estoy aquí para escucharte y contarte cómo Vive puede acompañarte en este momento. ¿Me cuentas cómo estás hoy?";
+    const bienvenida = "¡Hola! 🌿 Bienvenido a Vive, Atrévete a Sanar.\n\nMe alegra que estés aquí. Sea lo que sea que estás viviendo hoy, quiero que sepas algo importante: no estás solo, y hay esperanza.\n\nSoy el asistente de Roberto y Melissa, fundadores de Vive, Atrévete a Sanar y estoy aquí para escucharte y contarte cómo Vive puede acompañarte en este momento. ¿Me cuentas cómo estás hoy?";
     addMessage(bienvenida, "bot");
     history.push({ role: "assistant", content: bienvenida });
   }, 400);
