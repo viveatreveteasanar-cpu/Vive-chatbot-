@@ -8,6 +8,7 @@ export default async function handler(req, res) {
 
   try {
     const { messages, system } = req.body;
+    const systemFinal = system + "\n\nIMPORTANTE: Nunca uses asteriscos, markdown, negrillas ni formato especial. Escribe en texto plano natural, como si fuera una conversación de WhatsApp.";
     const response = await fetch("https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: {
@@ -18,7 +19,7 @@ export default async function handler(req, res) {
       body: JSON.stringify({
         model: "claude-sonnet-4-20250514",
         max_tokens: 1000,
-        system: system,
+        system: systemFinal,
         messages: messages
       })
     });
